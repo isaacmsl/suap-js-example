@@ -21,3 +21,12 @@ api.post('autenticacao/token/', user)
             console.log(response.data)
         })
     })
+    .catch(err => {
+        const status = err.response.status
+
+        if (status === 401) {
+            console.error('Erro: Matricula ou senha incorreta(s)')
+        } else {
+            console.error('Erro inesperado :*')
+        }
+    })
