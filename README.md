@@ -2,11 +2,25 @@
 
 Um exemplo de utilização da API do SUAP (Sistema Unificado de Administração Pública) do IFRN usando Node.js
 
+# Como instalar
+
+Supondo que você já possui o *npm*  e o atual repositório (*suap-js-example*) instalados na sua máquina, no diretório do repositório execute o seguinte comando:
+
+```
+npm i
+```
+
 # Como testar
 
-Crie um arquivo .dotenv e inclua o seguinte conteúdo:
+(Opcional) Crie um arquivo .dotenv no *repositório* e inclua o seguinte conteúdo:
 
 ```
 MATRICULA=<SUA MATRICULA NO SUAP>
 SENHA=<SUA SENHA NO SUAP>
+```
+
+Para executá-lo, execute o seguinte comando:
+
+```
+npm start
 ```
